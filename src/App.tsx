@@ -7,7 +7,7 @@ import { SimplifiedPlaylist } from '@spotify/web-api-ts-sdk';
 
 function App() {
   
-  // Instead of using all permissions we can specify specific scopes by using a string list 
+  // Instead of using all permissions we can specify scopes by using a string list 
   //const useScopes: string[] = Scopes.playlistRead.concat(Scopes.userDetails, Scopes.playlist, Scopes.userLibraryRead);
 
   const sdk = useSpotify(
@@ -28,7 +28,7 @@ function CurrentUserPlaylists({ sdk }: { sdk: SpotifyApi}) {
   const [currentUserProfile, setcurrentUserProfile] = useState<UserProfile | null>(null); // Initialize with null
   const [currentUsersPlaylists, setcurrentUsersPlaylists] = useState<Page<SimplifiedPlaylist> | null>(null); // Initialize with null
 
-  // On page rerender we fetch the current user profile and the current users playlists from the API 
+  // On rerender we fetch the current user profile and the current users playlists from the API 
   useEffect(() => {
     (async () => {
       const fetchedProfile = await sdk.currentUser.profile();
