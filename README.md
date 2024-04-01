@@ -1,4 +1,4 @@
-# Billboard Chat / Spotify Web API Playlist Analysis 
+# Billboard Chart / Spotify Web API Playlist Analysis 
 
 This project is a WIP
 
@@ -9,10 +9,12 @@ This application uses the JavaScript/TypeScript SDK for the [Spotify Web API](ht
 Because this SDK uses `fetch` both in Node and the Browser, and ESM, we require the following:
 
 - Node 18.0.0 or higher
-- For best results buidl with node v18.20.0 (npm v10.5.0)
+- For best results build with node v18.20.0 (npm v10.5.0)
 - A modern, version infinite, browser
 
 ## Project set up
+
+Create an app on the [Spotify Developers WEB API](https://developer.spotify.com/documentation/web-api) to obtain your credentials 
 
 ```bash
 npm install @spotify/web-api-ts-sdk
@@ -22,7 +24,7 @@ npm install @spotify/web-api-ts-sdk
 npm install
 ```
 
-Create a `.env` file in the example directory with your `client_id` and redirect url:
+Create a `.env` file in the example directory with your `client_id` and redirect url (from your Spotify Developers Dashboard):
 
 ```bash .env
 VITE_SPOTIFY_CLIENT_ID=your-spotify-client-id
